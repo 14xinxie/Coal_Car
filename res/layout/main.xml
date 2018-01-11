@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ecf0f1">
+    <Button 
+		android:text="连接" 
+		android:id="@+id/Button03" 
+		android:layout_width="70dp" 
+		android:layout_height="70dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:background="@drawable/link"
+		android:textSize="20sp"
+		android:textColor="#ecf0f1"
+		android:textStyle="bold"
+		android:onClick="onConnectButtonClicked">
+	</Button>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="100dp" >
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/stop"
+            android:background="@drawable/left"
+            android:onClick="turn_left" />
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/stop"
+            android:background="@drawable/right"
+            android:onClick="turn_right" />
+
+        <Button
+            android:id="@+id/speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/speed"
+            android:onClick="speed_up" />
+
+        <Button
+            android:id="@+id/slow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/slow"
+            android:onClick="slow_down" />
+
+        <Button
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/left"
+            android:layout_alignBottom="@+id/left"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/stop"
+            android:onClick="stop" 
+            />
+
+        <Button
+            android:id="@+id/forward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/stop"
+            android:layout_alignLeft="@+id/stop"
+            android:background="@drawable/up"
+            android:onClick="forward" />
+
+        <Button
+            android:id="@+id/backward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/right"
+            android:layout_toLeftOf="@+id/right"
+            android:background="@drawable/down"
+            android:onClick="backwrad" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/speed"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:text="加速"
+            android:textColor="#99e74c3c"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/slow"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="减速"
+            android:textColor="#99e74c3c"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nowTmp_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="遥控方向盘"
+        android:textColor="#99e74c3c"
+        android:textSize="23sp" />
+    
+</RelativeLayout>

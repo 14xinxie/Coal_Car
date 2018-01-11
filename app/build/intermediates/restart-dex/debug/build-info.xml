@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<instant-run
+    abi="arm64-v8a,armeabi-v7a,armeabi"
+    api-level="22"
+    density="xxhdpi"
+    format="7"
+    timestamp="191868654204544" >
+
+    <task
+        name="javac"
+        duration="657" />
+    <task
+        name="instant-run-dex"
+        duration="0" />
+    <task
+        name="instant-run-transform"
+        duration="1133" />
+    <task
+        name="verifier"
+        duration="95" />
+
+    <artifact
+        location="F:\Java\Android-Projects\Coal_Car\app\build\outputs\apk\app-debug.apk"
+        type="MAIN" />
+
+    <build timestamp="191868654204544" >
+        <artifact
+            location="F:\Java\Android-Projects\Coal_Car\app\build\outputs\apk\app-debug.apk"
+            type="MAIN" />
+    </build>
+
+</instant-run>

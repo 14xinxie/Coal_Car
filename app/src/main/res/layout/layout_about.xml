@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent">
+  
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:lineSpacingExtra="4dp"
+        android:text="使用说明：\n        使用软件前需要打开手机蓝牙，成功打开后点击右下角的蓝牙连接按钮，搜索采矿车的蓝牙，初始配对密码为1234。连接成功后，可以对采矿车的运动进行控制。         \n        假如出现连接失败的情况，可以选择重启采矿车的电源，也可以关闭手机蓝牙进行重新连接。\n        后续功能的完善，欢迎致电！    "
+        />
+    
+    
+    <TextView
+        android:layout_marginBottom="10dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:text="Power By：物联网创新基地"
+        />
+    
+</RelativeLayout>

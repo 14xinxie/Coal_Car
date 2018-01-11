@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AboutTheme" parent="android:Theme.Holo.Light">  
+        <!-- API 14 theme customizations can go here. -->  
+        <item name="android:actionBarStyle">@style/about_actionbar_style</item>   
+    </style>
+    <style name="AcBar_titleStyle">  
+       <item name="android:textColor">#ecf0f1</item>
+       <item name="android:textSize">24sp</item>
+       <item name="android:textStyle">bold</item>
+    </style>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light">  
+        <!-- API 14 theme customizations can go here. -->  
+        <item name="android:actionBarStyle">@style/my_actionbar_style</item>   
+    </style>
+    <style name="Base.TextAppearance.AppCompat.Button">
+        <item name="android:textSize">@dimen/abc_text_size_button_material</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">?android:textColorPrimary</item>
+    </style>
+    <style name="Platform.AppCompat" parent="Platform.V14.AppCompat"/>
+    <style name="Platform.AppCompat.Light" parent="Platform.V14.AppCompat.Light"/>
+    <style name="Platform.V14.AppCompat" parent="Platform.V11.AppCompat">
+        <item name="android:actionModeSelectAllDrawable">?actionModeSelectAllDrawable</item>
+
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="Platform.V14.AppCompat.Light" parent="Platform.V11.AppCompat.Light">
+        <item name="android:actionModeSelectAllDrawable">?actionModeSelectAllDrawable</item>
+
+        <item name="android:listPreferredItemPaddingLeft">@dimen/abc_list_item_padding_horizontal_material</item>
+        <item name="android:listPreferredItemPaddingRight">@dimen/abc_list_item_padding_horizontal_material</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent" parent="@android:style/TextAppearance.StatusBar.EventContent"/>
+    <style name="TextAppearance.StatusBar.EventContent.Info"/>
+    <style name="TextAppearance.StatusBar.EventContent.Line2">
+        <item name="android:textSize">@dimen/notification_subtext_size</item>
+    </style>
+    <style name="TextAppearance.StatusBar.EventContent.Time"/>
+    <style name="TextAppearance.StatusBar.EventContent.Title" parent="@android:style/TextAppearance.StatusBar.EventContent.Title"/>
+    <style name="aboutAcBar_titleStyle">  
+       <item name="android:textColor">#ecf0f1</item>
+       <item name="android:textSize">24sp</item>
+       <item name="android:text">关于</item>
+       <item name="android:textStyle">bold</item>
+    </style>
+    <style name="about_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">  
+        <item name="android:background">#6699FF</item>
+        <item name="android:titleTextStyle">@style/aboutAcBar_titleStyle</item>
+        <item name="android:drawableLeft">@drawable/back</item>   
+         
+    </style>
+    <style name="my_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">  
+        <item name="android:background">#6699FF</item>
+        <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
+        <item name="android:drawableLeft">@drawable/light</item>   
+         
+    </style>
+</resources>

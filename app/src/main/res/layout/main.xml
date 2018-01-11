@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ecf0f1">
+    <Button 
+
+		android:id="@+id/connect_button"
+		android:layout_width="70dp" 
+		android:layout_height="70dp"
+		android:layout_alignParentRight="true"
+		android:layout_alignParentBottom="true"
+		android:layout_marginRight="10dp"
+		android:layout_marginBottom="10dp"
+		android:background="@drawable/switch_on"
+		android:textSize="20sp"
+		android:textColor="#ecf0f1"
+		android:textStyle="bold"
+		android:onClick="onConnectButtonClicked">
+	</Button>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="80dp" >
+
+        <Button
+            android:id="@+id/left_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/stop_button"
+            android:background="@drawable/left"
+            android:onClick="turn_left" />
+
+        <Button
+            android:id="@+id/right_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/stop_button"
+            android:background="@drawable/right"
+            android:onClick="turn_right" />
+
+        <Button
+            android:id="@+id/speed_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/speed"
+            android:onClick="speed_up" />
+
+        <Button
+            android:id="@+id/slow_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/slow"
+            android:onClick="slow_down" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="64dp"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@+id/left_button"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/start"
+            android:onClick="stop" 
+            />
+
+        <Button
+            android:id="@+id/forward_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_above="@+id/stop_button"
+            android:layout_alignLeft="@+id/stop_button"
+            android:background="@drawable/up"
+            android:onClick="forward" />
+
+        <Button
+            android:id="@+id/backward_button"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_below="@+id/right_button"
+            android:layout_alignLeft="@+id/stop_button"
+            android:background="@drawable/down"
+            android:onClick="backward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/speed_button"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="17dp"
+            android:text="加速"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/slow_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:text="减速"
+            android:textColor="#000000"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_nowTmp_is"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:textColor="#000000"
+        android:textSize="23sp" />
+    
+</RelativeLayout>
